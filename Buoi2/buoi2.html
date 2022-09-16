@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Buổi 2</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    h3,
+    p,
+    .session {
+      background-color: silver;
+      margin-top: 40px;
+      padding: 20px;
+    }
+
+    .font_oswald {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .flexbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .square {
+      width: 60px;
+      height: 60px;
+    }
+
+    .circle {
+      border-radius: 300px;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .borderbox {
+      /* border-width: 6px;
+      border-color: #ec9633;
+      border-style: solid; */
+      border: 10px #ec9633 solid;
+
+      /* padding: 20px; */
+      /* padding-left: 50px;
+      padding-top: 40px;
+      padding-right: 30px;
+      padding-bottom: 20px; */
+      /* top - right - bottom - left */
+      padding: 60px 40px 20px 10px;
+      /* padding: 60px 20px; */
+      /* margin: 50px; */
+    }
+  </style>
+</head>
+
+
+<body style="font-size: 18px; padding-bottom: 360px;">
+  <h2>Tìm hiểu thêm các thuộc tính CSS</h2>
+
+  <p style="display: block;">Display block</p>
+  <div style="display: block;">Display <b>block</b></div>
+
+  <p>
+    <a style="color: blue;">Thẻ a là inline, không chiếm cả dòng</a>
+    <span style="color: purple">Thẻ span là <b>inline</b></span>
+  </p>
+
+  <div class="session">
+    <div style="text-align: center;">Căn giữa</div>
+    <div style="text-align: right;">Căn phải</div>
+    <div style="text-align: left;">Căn trái</div>
+  </div>
+
+  <div class="session">
+    <div class="font_oswald">Font chữ Oswald</div>
+    <div class="font_oswald" style="font-weight: 200;">Font weight 200</div>
+    <div class="font_oswald" style="font-weight: 400;">Font weight 400</div>
+    <div class="font_oswald" style="font-weight: 700;">Font weight 700</div>
+  </div>
+
+  <div style="height: 60px; width: 600px; background-color: #12345666; margin-top: 40px;" class="flexbox">
+    <div><b>display "Flex" - QUAN TRỌNG</b></div>
+  </div>
+
+  <div class="session" style="display: flex; gap: 40px; flex-wrap: wrap-reverse; color: white;">
+    <div class="square circle flexbox red">1</div>
+    <div class="square circle flexbox green">2</div>
+    <div class="square circle flexbox blue">3</div>
+    <div class="square red">4</div>
+    <div class="square green">5</div>
+    <div class="square blue">6</div>
+    <div class="square red">7</div>
+    <div class="square green">8</div>
+    <div class="square blue">9</div>
+    <div class="square red">10</div>
+    <div class="square green flexbox">11</div>
+    <div class="square blue">12</div>
+    <div class="square red flexbox">13</div>
+    <div class="square green">14</div>
+    <div class="square blue">15</div>
+  </div>
+
+  <div class="session"
+    style="display: flex; flex-direction: column; align-items: flex-start;  background-color: aquamarine; gap: 10px;">
+    Border box - CŨNG QUAN TRỌNG
+
+    <div style="background-color: black; padding: 4px;">
+
+      <div style="width: 100px; height: 80px; background-color: #b6de9c;" class="borderbox">
+        <div class="flexbox" style="width: 100%; height: 100%; background-color: #8686d7;">100 x 80</div>
+      </div>
+    </div>
+    <!-- Từ 100x80 thành 140x120 -->
+  </div>
+
+  <div class="session" style="position: relative;">
+    Thuộc tính <b>position</b>
+    <div>
+      Position absolute sẽ tính tương đối theo đối tượng bên ngoài gần nhất có position relative
+    </div>
+    <div style="height: 300px; width: 500px; background-color: red; position: static;">
+      <div class="square green" style="position: absolute; right: 50%; bottom: 0px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="session" style="width: 600px; display: flex; gap: 30px; flex-direction: column; align-items: flex-start;">
+    Ví dụ về background-image: hiển thị khung ảnh
+    <img src="https://cdn.baogiaothong.vn/upload/3-2021/images/2021-08-29/2-1630173481-49-width650height813.jpg"
+      height="300px" />
+
+    <div
+      style="width: 300px; height: 300px; background-image: url(https://cdn.baogiaothong.vn/upload/3-2021/images/2021-08-29/2-1630173481-49-width650height813.jpg); background-position: center; background-size: cover;">
+    </div>
+
+    <div
+      style="width: 800px; height: 300px; background-image: url(https://cdn.baogiaothong.vn/upload/3-2021/images/2021-08-29/2-1630173481-49-width650height813.jpg); background-position: center; background-size: contain; background-repeat: no-repeat;">
+    </div>
+  </div>
+
+  <div class="session"
+    style="width: 600px; height: 400px; background: url(https://data.webnhiepanh.com/wp-content/uploads/2020/11/21105453/phong-canh-1.jpg) no-repeat center / cover; position: relative;">
+    Ví dụ về sử dụng position absolute
+
+    <div style="position: absolute; right: calc(50% - 90px); bottom: 30px;">
+      <div class="square circle"
+        style="width: 180px; height: 180px; background: url(https://mythuatcmc.com/img/images/CH%C3%8C/1_111.JPG) no-repeat center / cover; position: relative;">
+
+        <div style="position: absolute; top: 40px; left: 0px; right: 0px; text-align: center;">Chữ ở trong Avatar</div>
+      </div>
+    </div>
+
+    <div style="position: absolute; right: calc(50% - 90px); bottom: 30px;">
+      <div class="square circle green" style="border: 3px solid white; width: 50px; height: 50px;"></div>
+    </div>
+  </div>
+
+  <div class="session">
+    Position fixed: Giống absolute nhưng tính theo toàn bộ màn hình -> Chạy theo màn hình
+    <div class="square green flexbox"
+      style="position: fixed; top: 0px; left: 0px; right: 0px; height: 60px; width: 100%;">
+      Header
+    </div>
+  </div>
+
+</body>
+
+</html>
