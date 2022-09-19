@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Static Template</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div style="display: flex; height: 80vh;">
+    <div class="red" style="width: 200px; height: 100%;">
+      <div style="display: flex; justify-content: center;">
+        <img
+          src="https://tranhincanvas.com/uploads/images/H%C3%ACnh%20trong%20b%C3%A0i%20h%E1%BB%8Da%20s%C4%A9%20phung%20huyen/20.jpg"
+          width="180px" height="180px" style="border-radius: 100px; object-fit: cover;" />
+      </div>
+      <div>Line - 1</div>
+      <div>Line - 2</div>
+      <div>Line - 3</div>
+      <div>Line - 4</div>
+      <div>Line - 5</div>
+    </div>
+    <div style="flex: 1; height: 100%; display: flex; flex-direction: column;">
+      <div style="display: flex;">
+        <div class="green" style="flex: 1; height: 400px;">
+          GREEN
+        </div>
+        <div class="blue" style="flex: 1; height: 400px;">
+          BLUE
+        </div>
+      </div>
+
+      <div class="orange" style="flex: 1;">
+        ORANGE
+        <ol type="a">
+          <!-- a A I i 1 -->
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ol>
+        <ul type="dot">
+          <!-- circle square dot -->
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <table style="width: 100%;">
+    <tr>
+      <th>Person 1</th>
+      <th>Person 2</th>
+      <th>Person 3</th>
+    </tr>
+    <tr>
+      <td colspan="2">Email</td>
+
+      <td>Linus</td>
+    </tr>
+    <tr>
+      <td rowspan="3">16</td>
+      <td>14</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td colspan="2">Tobias</td>
+    </tr>
+    <tr>
+      <td>Tobias</td>
+      <td>Linus</td>
+    </tr>
+  </table>
+
+  <div class="green" style="padding: 20px; display: flex;">
+    <div class="red" style="flex: 1;">
+      <p style="color: white;">Bên trong green 1</p>
+      <p>Bên trong green 2</p>
+      <p>Bên trong green 3</p>
+      <p>Bên trong green 4</p>
+    </div>
+    <div class="orange" style="flex: 1;">
+      <p class="house1 red">Bên trong div 1 - House 1</p>
+      <p>Bên trong div 2</p>
+      <p>Bên trong div 3</p>
+      <p>Bên trong div 4</p>
+    </div>
+  </div>
+
+  <div class="red" style="padding: 20px;">
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.orange {
+  background-color: orange;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+}
+
+/* .green p {
+  color: white;
+} */
+
+.green > p {
+  color: white;
+}
+
+.house1 + p {
+  color: red !important;
+}
+.house1 ~ p {
+  color: orange;
+}
+
+.house1.red {
+  color: white;
+}
+
+.red:hover {
+  /* cursor: pointer; */
+}
+
+ol > li::hover {
+  color: red;
+}
+
+.red > button {
+  margin-left: 20px;
+}
+
+.red > button:first-child {
+  margin-left: 0px;
+}
