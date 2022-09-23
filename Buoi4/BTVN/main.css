@@ -1,0 +1,82 @@
+.Thùng_Hàng {
+  width: 600px;
+  margin: 100px;
+  border: 1px solid silver;
+}
+
+.Khung_Trên {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.Khung_Ảnh {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Khung_Ảnh > span {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.Khung_Tên {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Khung_Tên .Tên {
+  font-size: 20px;
+}
+
+.Khung_Tên .Ngày {
+  font-size: 20px;
+  color: #999;
+}
+
+.Khung_Nút_Bấm {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #999;
+  background: none;
+}
+
+button:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+
+.Khung_Giữa {
+}
+
+.Khung_Giữa > .Khung_Ảnh_2 {
+  height: 300px;
+  background-image: url(https://mui.com/static/images/cards/paella.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Khung_Giữa > .Khung_Nội_Dung {
+  padding: 20px;
+  color: #999;
+}
+
+.Khung_Dưới {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
