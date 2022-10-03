@@ -27,4 +27,32 @@ jQuery(function () {
     $(this).text("My Name");
   });
   $("#container").append(div2);
+
+  var input1 = $("<input />");
+  input1.attr("id", "input1");
+  input1.attr("type", "number");
+
+  var input2 = $("<input />");
+  input2.attr("id", "input2");
+  input2.attr("type", "number");
+
+  $("#container").append(input1);
+  $("#container").append(input2);
+
+  var buttonCalculate = $("<button></button>").text("Tính tổng");
+  buttonCalculate.addClass("btn btn-primary");
+
+  buttonCalculate.on("click", () => {
+    console.log("click");
+    var a = Number(input1.val());
+    var b = Number(input2.val());
+    var c = a + b;
+    answer.text("Kết quả: " + c);
+  });
+
+  var answer = $("<span></span>").text("Kết quả: 0");
+  $("#container").append(answer);
+
+  $("#container").append(buttonCalculate);
 });
+
